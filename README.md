@@ -19,6 +19,11 @@ python=3.10
 
 ## Запуск проекта
 ### 1 Клонируем репозиторий
+
+```bash
+git clone https://github.com/Yomorad/django_nestedtree.git
+```
+
 ### 2 Подтягиваем зависимости
 
 ```bash
