@@ -1,0 +1,162 @@
+[
+    {
+        "model": "menu_app.menuitem",
+        "pk": 1,
+        "fields": {
+            "name": "Main",
+            "parent": null,
+            "url": "/main/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 2,
+        "fields": {
+            "name": "Products",
+            "parent": 1,
+            "url": "/products/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 3,
+        "fields": {
+            "name": "Electronics",
+            "parent": 2,
+            "url": "/products/electronics/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 4,
+        "fields": {
+            "name": "Laptops",
+            "parent": 3,
+            "url": "/products/electronics/laptops/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 5,
+        "fields": {
+            "name": "Smartphones",
+            "parent": 3,
+            "url": "/products/electronics/smartphones/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 6,
+        "fields": {
+            "name": "Home Appliances",
+            "parent": 2,
+            "url": "/products/home-appliances/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 7,
+        "fields": {
+            "name": "Washing Machines",
+            "parent": 6,
+            "url": "/products/home-appliances/washing-machines/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 8,
+        "fields": {
+            "name": "Refrigerators",
+            "parent": 6,
+            "url": "/products/home-appliances/refrigerators/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 9,
+        "fields": {
+            "name": "Services",
+            "parent": 1,
+            "url": "/services/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 10,
+        "fields": {
+            "name": "Support",
+            "parent": 9,
+            "url": "/services/support/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 11,
+        "fields": {
+            "name": "Repairs",
+            "parent": 9,
+            "url": "/services/repairs/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 12,
+        "fields": {
+            "name": "Contacts",
+            "parent": 1,
+            "url": "/contacts/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 13,
+        "fields": {
+            "name": "About Us",
+            "parent": 1,
+            "url": "/about-us/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 14,
+        "fields": {
+            "name": "Blog",
+            "parent": 1,
+            "url": "/blog/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 15,
+        "fields": {
+            "name": "Tech News",
+            "parent": 14,
+            "url": "/blog/tech-news/",
+            "named_url": ""
+        }
+    },
+    {
+        "model": "menu_app.menuitem",
+        "pk": 16,
+        "fields": {
+            "name": "Product Reviews",
+            "parent": 14,
+            "url": "/blog/product-reviews/",
+            "named_url": ""
+        }
+    }
+]
