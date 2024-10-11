@@ -75,4 +75,4 @@ Main
         Tech News
         Product Reviews
 ```
-
+Админка: http://127.0.0.1:8000/admin/
