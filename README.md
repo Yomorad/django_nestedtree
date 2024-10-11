@@ -1,6 +1,6 @@
+# Древовидное меню на Django
 
-
-Задача :
+## Задача
 Нужно сделать django app, который будет реализовывать древовидное меню, соблюдая следующие условия:
 1) Меню реализовано через template tag
 2) Все, что над выделенным пунктом - развернуто. Первый уровень вложенности под выделенным пунктом тоже развернут.
@@ -14,4 +14,60 @@
  {% draw_menu 'main_menu' %}
  При выполнении задания из библиотек следует использовать только Django и стандартную библиотеку Python.
 
-        
+## Используется
+python=3.10
+
+## Запуск проекта
+### 1 Клонируем репозиторий
+### 2 Подтягиваем зависимости
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3 Миграции
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 4 Загружаем фикстуры
+
+```bash
+python manage.py loaddata fixtures/menu_fixtures.json
+```
+
+### 5 Добавляем суперпользователя
+
+```bash
+python manage.py createsuperuser
+```
+
+### 6 Запуск сервера
+
+```bash
+python manage.py runserver
+```
+
+## Проверяем выполнение задания, открываем http://127.0.0.1:8000/Main/
+Получим вывод:
+```
+Main
+    Products
+        Electronics
+            Laptops
+            Smartphones
+        Home Appliances
+            Washing Machines
+            Refrigerators
+    Services
+        Support
+        Repairs
+    Contacts
+    About Us
+    Blog
+        Tech News
+        Product Reviews
+```
+
