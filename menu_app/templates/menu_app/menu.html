@@ -2,8 +2,5 @@
 {% load menu_app_tags %}
 
 {% block content %}
-    {% tag_menu as menu_all%}
-    {% for row_menu in menu_all %}
-        <li><a href="{% url "menu:index" slug_url %}">{{ slug_url }}</a></li>
-    {% endfor %}
-{% endblock %}
+    {% draw_menu 'menu_name' %}
+{% endblock content %}

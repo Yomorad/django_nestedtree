@@ -1,16 +1,8 @@
-from django.shortcuts import get_list_or_404, render
 
-from menu_app.models import Menu
+from django.shortcuts import render
+from menu_app.models import MenuItem
 
-# Create your views here.
 
-def menu_tree(request, slug = None):
-    if slug == None:
-        goods = Menu.objects.all()
-    else:
-        goods = get_list_or_404(Menu.objects.filter(slug=slug))
-
-    context = {
-        'slug_url': slug,
-    }
-    return render(request, 'menu_app/menu.html', context)
+def draw_menu(request, menu_name):
+    menu_items = MenuItem.objects.filter(name=menu_name).select_related('parent')
+    return render(request, 'menu_app/menu.html', {'menu_items': menu_items})
